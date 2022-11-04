@@ -1,0 +1,54 @@
+.section-about {
+  position: relative;
+  top: 180px;
+  width: 100%;
+  height: 100%;
+}
+
+.section-about h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.section-about .underline {
+  width: 90px;
+  height: 3px;
+  background: #e31b6d;
+  border-radius: 10px;
+  margin: 8px auto;
+}
+
+.section-about .container-content-about {
+  width: 100%;
+  height: 100%;
+}
+
+.section-about .container-content-about .container-habilities .hability {
+  width: 20%;
+  display: inline-block;
+  margin-left: 50px;
+  margin-top: 7rem;
+  text-align: center;
+}
+
+.section-about .container-content-about .container-habilities .hability h3 {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.2rem;
+  margin-top: 0.8rem;
+}
+
+.section-about .container-content-about .container-habilities .hability p {
+  color: rgba(255, 255, 255, 0.4);
+  justify-content: center;
+  font-size: 0.8rem;
+  padding: 15px 10px;
+}
+
+.section-about .container-content-about .container-habilities .hability i {
+  position: absolute;
+  margin-left: -67px;
+  margin-top: 20px;
+  color: #fff;
+  font-size: 3rem;
+}

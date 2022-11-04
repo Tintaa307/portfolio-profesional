@@ -1,0 +1,178 @@
+/* ============= GOOGLE FONTS ============= */
+@import url("https://fonts.googleapis.com/css2?family=Exo:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Patua+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@900&display=swap");
+
+:root {
+  /* =========== COLORS =========== */
+  --color-main: #8800ac;
+  --color-main-opaque: #001890;
+  --color-main-light: #ff1928;
+  --color-main-lighten: #ff303f;
+  --title-color: #000;
+  --text-color: #1e1e1e;
+  --nav-color-text: #fff;
+  --text-color-light: #353535;
+  --body-color: #fff;
+  --box-shadow: var(--color-main);
+  --red: #ec000f;
+  --blue: #0020c3;
+  --orange: #ff4d00ff;
+  --green: #33a100ff;
+  --rosa: #8800ac;
+  /* =========== FONT TYPE =========== */
+  --body-font: "Patua One", cursive;
+  --details-font: "La Belle Aurore", cursive;
+  --info-font: "Roboto Mono", monospace;
+  --red-hat-font: "Red Hat Display", sans-serif;
+  --title-font: "Exo 2", sans-serif;
+  --patua-font: "Patua One", cursive;
+  --poppins-font: "Poppins", sans-serif;
+  --merriweather-font: "Merriweather", serif;
+  --montserrat-font: "Montserrat", sans-serif;
+  --default-size: 1.1rem;
+  --bigger-size: 1.5rem;
+  --big-size: 1.2rem;
+  --sm-size: 0.883rem;
+  --sxm-size: 0.75rem;
+  --img-size: 50%;
+  --icon-size: 1.3rem;
+  --title-size: 1.7rem;
+  --big-word: 6rem;
+  --special: 3rem;
+
+  /* =========== TRANSITIONS =========== */
+  --transition: all 0.25s ease-in-out;
+}
+
+/* ============= BASE CSS ============= */
+
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #fff;
+  border-radius: 5rem;
+}
+
+body {
+  font-family: var(--montserrat-font);
+  font-size: var(--default-size);
+  background-color: #030016;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--text-color);
+  font-weight: 600;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+[theme="dark"] {
+  --body-color: #000;
+  --text-color: #d1d1d1;
+  --text-color-light: rgba(255, 255, 255, 0.733);
+  --title-color: #fff;
+  --nav-color-text: #fff;
+}
+
+[theme="light"] {
+  --body-color: #fff;
+  --text-color: #1e1e1e;
+  --text-color-light: #1e1e1e;
+  --title-color: #000;
+  --nav-color-text: #000;
+}
+
+[color="capa-content red"] {
+  --color-main: #ec000f;
+  --color-main-light: #ff1928;
+  --color-main-lighten: #ff1f2e;
+  --color-main-opaque: #b9000c;
+  --box-shadow: 0 0 12px #ec000f;
+}
+
+[color="capa-content blue"] {
+  --color-main: #0020c3;
+  --color-main-light: #1939dc;
+  --color-main-lighten: #2444e7;
+  --color-main-opaque: #001890;
+  --box-shadow: 0 0 12px #0020c3;
+}
+
+[color="capa-content orange"] {
+  --color-main: #ff4d00ff;
+  --color-main-light: #ff6114;
+  --color-main-lighten: #ff7124;
+  --color-main-opaque: #cc3e00;
+  --box-shadow: 0 0 12px #ff4d00ff;
+}
+
+[color="capa-content green"] {
+  --color-main: #33a100ff;
+  --color-main-light: #4cba19;
+  --color-main-lighten: #57c524;
+  --color-main-opaque: #236e00;
+  --box-shadow: 0 0 12px #33a100ff;
+}
+
+[color="capa-content rosa"] {
+  --color-main: #8800ac;
+  --color-main-light: #9f17c3;
+  --color-main-lighten: #ac24d0;
+  --color-main-opaque: #600079;
+  --box-shadow: 0 0 12px #8800ac;
+}
+
+[opaque="opaque"] {
+  --color-main: var(--color-main-opaque);
+  --color-main-light: #0048cf7e;
+  --color-main-lighten: #0060de83;
+  --transition: none;
+  --box-shadow: none;
+}
+
+[font-size="big"] {
+  --default-size: 1.4rem;
+  --bigger-size: 1.8rem;
+  --big-size: 1.5rem;
+  --sm-size: 1.1rem;
+  --sxm-size: 0.95rem;
+  --img-size: 70%;
+  --icon-size: 1.7rem;
+  --title-size: 2.1rem;
+  --special: 3.4rem;
+}

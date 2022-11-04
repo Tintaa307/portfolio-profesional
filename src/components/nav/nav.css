@@ -1,0 +1,139 @@
+.container-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  background-color: #151228;
+  transform: translateY(-100px);
+  transition: var(--transition);
+  z-index: 3;
+}
+
+.container-header.nav-open {
+  transform: translateY(0);
+  transition: var(--transition);
+}
+
+.container-header .container-nav .container-logo {
+  width: 50%;
+}
+
+.container-header .container-nav .container-logo a svg {
+  width: 10%;
+  margin: 15px 40px;
+  cursor: pointer;
+}
+
+.container-header .container-nav .container-logo svg .circulo {
+  stroke-dasharray: 450;
+  stroke-dashoffset: -450;
+  animation: circulo 2s linear forwards;
+}
+
+.container-header .container-nav .container-logo svg .letra {
+  opacity: 0;
+  animation: letra 0.5s linear forwards;
+  animation-delay: 2.1s;
+}
+
+.container-header .container-nav .container-list {
+  width: 100%;
+  position: absolute;
+  top: 10px;
+  left: 30%;
+  z-index: 2;
+}
+
+.container-header .container-nav .container-list ul .container-li {
+  display: inline-block;
+  width: 140px;
+  margin: 22px 30px;
+  padding-bottom: 20px;
+  text-align: center;
+  transition: var(--transition);
+}
+
+.container-header .container-nav .container-list ul .container-li .selected {
+  position: relative;
+  top: 20px;
+  width: 0%;
+  height: 2px;
+  background-color: #e31b6d;
+  transition: var(--transition);
+  border-radius: 10px;
+  box-shadow: 0 0 5px #e31b6d;
+}
+
+.container-header
+  .container-nav
+  .container-list
+  ul
+  .container-li.one:nth-child(1)
+  .selected {
+  width: 100%;
+  transition: var(--transition);
+}
+
+.container-header
+  .container-nav
+  .container-list
+  ul
+  .container-li.two:nth-child(2)
+  .selected {
+  width: 100%;
+  transition: var(--transition);
+}
+
+.container-header
+  .container-nav
+  .container-list
+  ul
+  .container-li.three:nth-child(3)
+  .selected {
+  width: 100%;
+  transition: var(--transition);
+}
+
+.container-header
+  .container-nav
+  .container-list
+  ul
+  .container-li.four:nth-child(4)
+  .selected {
+  width: 100%;
+  transition: var(--transition);
+}
+
+.container-header .container-nav .container-list ul li a {
+  color: #fff;
+  font-size: 1.1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.container-header .container-nav .container-list ul li a:hover {
+  color: #e31b6d;
+  transition: var(--transition);
+}
+
+/* animations */
+
+@keyframes letra {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes circulo {
+  0% {
+    stroke-dashoffset: -450;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
