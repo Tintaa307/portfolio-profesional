@@ -111,6 +111,8 @@
   text-align: center;
   text-decoration: none;
   transition: var(--transition);
+  font-weight: bold;
+  letter-spacing: 0.8px;
 }
 
 .container-header .container-nav .container-list ul li a:hover {

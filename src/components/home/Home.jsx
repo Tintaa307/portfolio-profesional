@@ -21,7 +21,7 @@ const Home = () => {
       <div className="container-home-content">
         <div className="container-presentation">
           <h1>
-            Hola, soy Valentin Gonzalez <br />
+            Hi, I'm Valentin Gonzalez <br />
             <span>Fullstack Developer</span>
           </h1>
         </div>
