@@ -86,7 +86,7 @@ const Blob = () => {
         id="blobSvg"
       >
         <g transform="translate(146.2516860961914, -18.293701171875)">
-          <path class="blob" fill="#B535C0">
+          <path class="blob" fill="#51268f">
             <animate
               repeatCount="indefinite"
               attributeName="d"
@@ -114,7 +114,7 @@ const Blob = () => {
         id="blobSvg"
       >
         <g transform="translate(146.2516860961914, -18.293701171875)">
-          <path class="blob" fill="#B535C0">
+          <path class="blob" fill="#51268f">
             <animate
               repeatCount="indefinite"
               attributeName="d"
@@ -142,7 +142,7 @@ const Blob = () => {
         id="blobSvg"
       >
         <g transform="translate(146.2516860961914, -18.293701171875)">
-          <path class="blob" fill="#B535C0">
+          <path class="blob" fill="#51268f">
             <animate
               repeatCount="indefinite"
               attributeName="d"
