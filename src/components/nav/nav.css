@@ -120,6 +120,18 @@
   transition: var(--transition);
 }
 
+.container-header .container-open-tag-idiom {
+  position: absolute;
+  top: 30px;
+  right: 65px;
+}
+
+.container-header .container-open-tag-idiom i {
+  color: #fff;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
 /* animations */
 
 @keyframes letra {

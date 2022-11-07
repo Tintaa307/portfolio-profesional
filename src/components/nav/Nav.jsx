@@ -28,6 +28,7 @@ const navItems = [
 const Nav = () => {
   const [selected, setSelected] = useState("")
   const [navOpen, setNavOpen] = useState("")
+  const [open, setOpen] = useState("")
 
   const handleClick = (e) => {
     setSelected(e.target.id)
@@ -44,6 +45,10 @@ const Nav = () => {
     } else {
       setSelected("")
     }
+  }
+
+  const handleOpen = () => {
+    setOpen("open")
   }
 
   useEffect(() => {
@@ -100,6 +105,13 @@ const Nav = () => {
           </ul>
         </div>
       </nav>
+      <div className="container-open-tag-idiom">
+        <i
+          onClick={handleOpen}
+          class={["ri-arrow-down-s-line", open].join(" ")}
+        ></i>
+        <div className="container-idioms"></div>
+      </div>
     </header>
   )
 }
