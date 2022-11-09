@@ -32,6 +32,35 @@
   text-align: center;
 }
 
+.section-about
+  .container-content-about
+  .container-habilities
+  .hability
+  svg
+  path {
+  transition: var(--transition);
+}
+
+.section-about
+  .container-content-about
+  .container-habilities
+  .hability
+  svg:hover
+  path {
+  fill: #fff;
+  transition: var(--transition);
+}
+
+.section-about
+  .container-content-about
+  .container-habilities
+  .hability
+  svg:hover
+  i {
+  color: #e31b6d;
+  transition: var(--transition);
+}
+
 .section-about .container-content-about .container-habilities .hability h3 {
   color: rgba(255, 255, 255, 0.7);
   font-size: 1.2rem;
