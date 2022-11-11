@@ -41,30 +41,11 @@
   transition: var(--transition);
 }
 
-.section-about
-  .container-content-about
-  .container-habilities
-  .hability
-  svg:hover
-  path {
-  fill: #fff;
-  transition: var(--transition);
-}
-
-.section-about
-  .container-content-about
-  .container-habilities
-  .hability
-  svg:hover
-  i {
-  color: #e31b6d;
-  transition: var(--transition);
-}
-
 .section-about .container-content-about .container-habilities .hability h3 {
   color: rgba(255, 255, 255, 0.7);
   font-size: 1.2rem;
   margin-top: 0.8rem;
+  user-select: none;
 }
 
 .section-about .container-content-about .container-habilities .hability p {
@@ -72,6 +53,7 @@
   justify-content: center;
   font-size: 0.8rem;
   padding: 15px 10px;
+  user-select: none;
 }
 
 .section-about .container-content-about .container-habilities .hability i {
@@ -80,4 +62,29 @@
   margin-top: 20px;
   color: #fff;
   font-size: 3rem;
+  user-select: none;
+}
+
+.section-about .container-about-me {
+  width: 100%;
+  height: 100%;
+}
+
+.section-about .container-about-me .container-description {
+  position: absolute;
+  width: 40%;
+  margin-top: 10rem;
+  left: 130px;
+  margin-bottom: 3rem;
+}
+
+.section-about .container-about-me .container-description p {
+  color: #fff;
+  font-size: 1.4rem;
+  line-height: 35px;
+}
+
+.section-about .container-about-me .container-description p span {
+  color: #e31b6d;
+  font-weight: bold;
 }

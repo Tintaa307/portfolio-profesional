@@ -91,6 +91,7 @@ const Nav = () => {
                 <div
                   onClick={handleClick}
                   id={id}
+                  key={index}
                   className={["container-li", selected].join(" ")}
                 >
                   <li key={index} className="list-item">
@@ -108,7 +109,7 @@ const Nav = () => {
       <div className="container-open-tag-idiom">
         <i
           onClick={handleOpen}
-          class={["ri-arrow-down-s-line", open].join(" ")}
+          className={["ri-arrow-down-s-line", open].join(" ")}
         ></i>
         <div className="container-idioms"></div>
       </div>

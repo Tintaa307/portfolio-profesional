@@ -16,16 +16,7 @@ function App() {
         <Preload setLoading={setLoading} />
       ) : (
         <>
-          <motion.div
-            initial={{ x: -1200 }}
-            animate={{ x: 0 }}
-            transition={{
-              duration: 1.5,
-              bounce: 0.4,
-              type: "spring",
-            }}
-            className="container-all"
-          >
+          <motion.div className="container-all">
             <Nav />
             <Home />
             <About />
