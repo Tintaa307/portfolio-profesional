@@ -38,15 +38,21 @@ const About = () => {
       </div>
       <div className="container-about-me">
         <div className="container-description">
-          <p className="description">
-            <span>
+          <div className="circles">
+            <div className="circle one"></div>
+            <div className="circle two"></div>
+          </div>
+          <div className="container-p">
+            <p className="description">
               Im a FullStack Developer with a passion for learning new
-              technologies and creating new things.{" "}
-            </span>
-            Im so enthusiastic about the web development and i love backend too.
-            I have a lot of experience with React, Node, Express, MongoDB,
-            MySQL, and more.
-          </p>
+              technologies and creating new things. <br /> <br />
+              Im so enthusiastic about the web development and i love backend
+              too. I have a lot of experience with React, Node, Express,
+              MongoDB, MySQL, and more. <br /> <br />I love to work in a team
+              and i love to learn new things. I have experience with agile
+              methodologies and i love to work with SCRUM.
+            </p>
+          </div>
         </div>
       </div>
     </section>

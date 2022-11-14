@@ -72,16 +72,71 @@
 
 .section-about .container-about-me .container-description {
   position: absolute;
-  width: 40%;
-  margin-top: 10rem;
-  left: 130px;
-  margin-bottom: 3rem;
+  width: 100%;
+  margin: 7rem 0;
+}
+
+.section-about .container-about-me .container-description .circles {
+  width: 100%;
+}
+
+.section-about .container-about-me .container-description .circles .circle.one {
+  position: absolute;
+  left: 230px;
+  margin: -40px;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  background: #ff00cc; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #6a036d,
+    #570364
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #6a036d,
+    #570364
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.section-about .container-about-me .container-description .circles .circle.two {
+  position: absolute;
+  right: 230px;
+  margin: 40px;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  background: #ff00cc; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #51268f,
+    #610898
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #51268f,
+    #610898
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.section-about .container-about-me .container-description .container-p {
+  width: 650px;
+  height: 320px;
+  display: block;
+  margin: auto;
+  background: rgba(72, 20, 114, 0.137);
+  backdrop-filter: blur(90px);
+  border: 1px solid #fff;
+  border-radius: 20px;
 }
 
 .section-about .container-about-me .container-description p {
   color: #fff;
-  font-size: 1.4rem;
+  font-size: 1rem;
+  padding: 10px 10px;
   line-height: 35px;
+  font-weight: bold;
 }
 
 .section-about .container-about-me .container-description p span {
